@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import PageStructure from "../components/PageStructure";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <PageStructure>
+      <Component {...pageProps} />
+    </PageStructure>
+  );
 }
 
-export default MyApp
+export default MyApp;
